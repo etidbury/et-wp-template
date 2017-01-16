@@ -3,7 +3,7 @@ A Unix installation tool for quickly setting up a project environment with the l
 ##Setup
  
 1. Create and open a directory with your site name
-2. Run ```git clone https://github.com/etidbury/et-wp-template '```
+2. Run ```git clone https://github.com/etidbury/et-wp-template .```
 3. Install Word Press and other plugins ```sh init.sh```
 4. Start watchers ```sh start.sh```
 
@@ -13,19 +13,19 @@ A Unix installation tool for quickly setting up a project environment with the l
 - Word Press Plugins
     - Custom Fields Pro
 
-
 ##Setup Environment
 
-###Initial setup of fresh Mac
-```xcode-select --install```
+1. Initial setup for a fresh Mac ```xcode-select --install```
 
-####Install Compass + SASS
-```sudo gem install -n /usr/local/bin compass```
+2. Install Compass + SASS
 
-```sudo gem install -n /usr/local/bin sass```
+    ```sudo gem install -n /usr/local/bin compass```
 
-###Miscellaneous 
+    ```sudo gem install -n /usr/local/bin sass```
 
-Live Theme Updater:
+
+##Miscellaneous 
+
+Live Theme Configuration generator (for LESS):
 
 http://bootstrap-live-customizer.com/
