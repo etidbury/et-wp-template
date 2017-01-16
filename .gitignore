@@ -2,3 +2,10 @@
 _install/bootstrap
 _install/wordpress
 _install/latest.zip
+
+
+
+##Word Press Project
+
+wp-admin/
+wp-includes/

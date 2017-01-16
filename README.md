@@ -8,10 +8,18 @@ A Unix installation tool for quickly setting up a project environment with the l
 4. Start watchers ```sh start.sh```
 
 ##What's Included
+
 - Word Press (Latest version)
 - Bootstrap + SASS + JS (Latest version)
 - Word Press Plugins
     - Custom Fields Pro
+    - User Switching
+
+###What happens behind the scenes
+
+- Generates the theme directory
+- Downloads the latest Word press directly from https://wordpress.org/latest.zip and unzips
+- Adds a generic Grunt configuration to theme directory (.rb)
 
 ##Setup Environment
 

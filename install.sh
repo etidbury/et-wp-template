@@ -4,11 +4,14 @@ currentDirectoryName=${PWD##*/}
 
 read -p "Enter theme directory name (${currentDirectoryName}): "  themeDirectoryName
 
+PLUGINS_DIR="wp-content/themes/"
+
 if [ ${themeDirectoryName} -ge 0 ]; then
     THEME_DIR=wp-content/themes/${themeDirectoryName}
 else
     THEME_DIR=wp-content/themes/${currentDirectoryName}
 fi
+
 echo "Created theme: '${THEME_DIR}'\n"
 
 WP_ROOT=./ # <-- wordpress root directory
@@ -39,10 +42,6 @@ else
 fi
 
 mv ./_install/wordpress/* .
-rm -rf ./_install/wordpress
-
-rm -rf ./_install/latest.zip
-
 
 
 progress "Creating directories..."
@@ -108,6 +107,27 @@ progress "Embedding Root Files..."
 
 
 cp -a ./_install/init/_root/* ${THEME_DIR}
+
+
+
+
+progress "Embedding WP Plugins..."
+
+
+
+
+
+cp -a ./_install/init/_plugins/* ${PLUGINS_DIR}
+
+
+
+
+progress "Removing unwanted files..."
+
+rm -rf ./_install
+rm -rf install.sh
+rm -rf install.sh
+
 
 
 
