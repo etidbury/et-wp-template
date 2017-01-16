@@ -4,7 +4,7 @@ A Unix installation tool for quickly setting up a project environment with the l
  
 1. Create and open a directory with your site name
 2. Run ```git clone https://github.com/etidbury/et-wp-template .```
-3. Install Word Press and other plugins ```sh init.sh```
+3. Install Word Press and other plugins ```sh install.sh```
 4. Start watchers ```sh start.sh```
 
 ##What's Included
