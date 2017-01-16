@@ -41,6 +41,8 @@ fi
 mv ./_install/wordpress/* .
 rm -rf ./_install/wordpress
 
+rm -rf ./_install/latest.zip
+
 
 
 progress "Creating directories..."
