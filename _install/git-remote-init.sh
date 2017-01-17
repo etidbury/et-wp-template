@@ -3,6 +3,6 @@
 git init
 git add ../
 git commit -am 'Initial commit'
-curl -u 'etidbury' https://api.github.com/user/repos -d "{'name':'$1'}"
+curl -u 'etidbury' https://api.github.com/user/repos -d "{\"name\":\"$1\"}"
 git remote add origin git@github.com:etidbury/$1.git
 git push origin master
