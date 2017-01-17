@@ -124,9 +124,9 @@ cp -a ./_install/init/_plugins/* ${PLUGINS_DIR}
 
 progress "Removing unwanted files..."
 
-rm -rf ./_install
-rm -rf install.sh
-rm -rf install.sh
+#rm -rf ./_install
+#rm -rf install.sh
+#rm -rf install.sh
 
 
 
@@ -138,7 +138,11 @@ find ${WP_ROOT} -type d -exec chmod 755 {} \;
 find ${WP_ROOT} -type f -exec chmod 644 {} \;
 
 
-progress "Initiation Complete.\n"
+progress "Initiate Github Repository\n"
+
+
+sh "./_install/git-remote-init.sh" ${THEME_DIR}
+
 
 progress "Opening phpMyAdmin...\n"
 

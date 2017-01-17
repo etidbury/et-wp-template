@@ -2,7 +2,7 @@
 _install/bootstrap
 _install/wordpress
 _install/latest.zip
-
+_install/ftp-config.sh
 
 
 ##Word Press Project
