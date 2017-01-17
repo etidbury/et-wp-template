@@ -2,6 +2,7 @@
 
 git init
 git add ../
+git add .
 git commit -am 'Initial commit'
 curl -u 'etidbury' https://api.github.com/user/repos -d "{\"name\":\"$1\"}"
 git remote add origin "https://github.com/etidbury/$1.git"
