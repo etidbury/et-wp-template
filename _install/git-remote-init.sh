@@ -5,4 +5,4 @@ git add ../
 git commit -am 'Initial commit'
 curl -u 'etidbury' https://api.github.com/user/repos -d "{\"name\":\"$1\"}"
 git remote add origin https://github.com/etidbury/$1.git
-git push origin master
+git push -u origin master
